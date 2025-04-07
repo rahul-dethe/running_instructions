@@ -1,7 +1,7 @@
 # Guide to Running ANN-CI on NSM Systems
 
 ## ⚠️ Important Note
-**Do not run any this or any other MSCC application on login nodes!**
+**Do not run MSCC applications on login nodes!**
 
 ---
 
