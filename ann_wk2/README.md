@@ -13,10 +13,10 @@ If you don’t have access, please contact **mscc-support@cdac.in**.
 
 ---
 
-##  Step 2: Running an Application
+##  Step 2: Running the Application
 There are two ways to run an application: **Interactive Mode** and **Non-Interactive Mode**.
 
-### 🔹 A) Running an Application in 'Interactive Mode'
+### 🔹 A) Running in 'Interactive Mode'
 Execute the commands in the given sequence:
 
 ```bash
@@ -25,6 +25,10 @@ salloc -N 1 -p <partition-name> --exclusive  # To assign a node
 squeue --me  # To see the assigned node name
 ssh <node-name>  # To log in to the assigned node
 ```
+
+
+![Screenshot 2025-04-07 115335](https://github.com/user-attachments/assets/2e667b4f-b3cd-4c9a-87df-f8e196f3bf9a)
+
 
 After logging into the assigned node, follow these steps:
 
