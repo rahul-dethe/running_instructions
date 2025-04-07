@@ -8,8 +8,7 @@
 ##  Step 1: Log in to the NSM System
 If you don’t have access, please contact **mscc-support@cdac.in**.
 
-![image](https://github.com/user-attachments/assets/2952413b-ae62-4814-840b-2918a0b57e0b)
-
+![login](https://github.com/user-attachments/assets/36dba258-d79c-438b-807f-fcc0169e895e)
 
 ---
 
@@ -22,21 +21,14 @@ Execute the commands in the given sequence:
 ```bash
 sinfo  # To see partition names
 ```
-![Screenshot 2025-04-07 115335](https://github.com/user-attachments/assets/2e667b4f-b3cd-4c9a-87df-f8e196f3bf9a)
+![sinfo](https://github.com/user-attachments/assets/01168fea-442b-463c-8725-b0ac1661fe14)
+
 ```
 salloc -N 1 -p <partition-name> --exclusive  # To assign a node
-```
-![salloc](https://github.com/user-attachments/assets/b0106891-85cd-4edd-ac41-7be5875959c7)
-```
 squeue --me  # To see the assigned node name
-```
-![image](https://github.com/user-attachments/assets/3d1b480d-02d5-494b-ac8b-87d186229d38)
-
-```
 ssh <node-name>  # To log in to the assigned node
 ```
-![ssh](https://github.com/user-attachments/assets/66919bc5-a3a7-4104-a639-087f9deb4292)
-
+![salloc, squeue, ssh](https://github.com/user-attachments/assets/7658fc77-38e8-46ab-b444-eaf82fc1251f)
 
 
 After logging into the assigned node, follow these steps:
