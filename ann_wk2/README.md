@@ -35,8 +35,7 @@ squeue --me  # To see the assigned node name
 ```
 ssh <node-name>  # To log in to the assigned node
 ```
-
-
+![ssh](https://github.com/user-attachments/assets/66919bc5-a3a7-4104-a639-087f9deb4292)
 
 
 
