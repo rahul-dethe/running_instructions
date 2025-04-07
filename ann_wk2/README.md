@@ -30,6 +30,8 @@ salloc -N 1 -p <partition-name> --exclusive  # To assign a node
 ```
 squeue --me  # To see the assigned node name
 ```
+![image](https://github.com/user-attachments/assets/3d1b480d-02d5-494b-ac8b-87d186229d38)
+
 ```
 ssh <node-name>  # To log in to the assigned node
 ```
