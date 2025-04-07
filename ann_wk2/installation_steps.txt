@@ -1,0 +1,11 @@
+Follow the steps given below to successfully install ANN-CI Parallel.
+
+1) Miniconda installation:
+command: "bash install_miniconda.sh"
+
+2) Activate your miniconda by running " source /path_miniconda3/bin/activate "
+   Then navigate to the "conda_environment" directory and run the commands mentioned below:
+   
+   " conda env create -f ann_parallel_environment.yml "
+   " conda activate ann-ci_parallel "
+

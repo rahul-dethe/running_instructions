@@ -1,0 +1,10 @@
+After  setup/activating the conda environment, type:
+
+mpirun -np <X> python3 exe_v3.py <input.in>
+The input and bond order files should be kept in the same place where all the Python files are kept.
+
+Line 15 of any input files are “multi,<Y>” where Y is the  number of threads used for diagonalization,
+<X> in the execute command denotes the number of MPI processes used for the calculations,
+<X>+<Y> = <Z>, where
+<Z> in the number of mpi processes available/allocated to the system,
+Ideally <X>=<Y>=1/2<Z>.
