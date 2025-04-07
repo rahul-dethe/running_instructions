@@ -8,7 +8,7 @@
 ##  Step 1: Log in to the NSM System
 If you don’t have access, please contact **mscc-support@cdac.in**.
 
-![login](https://github.com/user-attachments/assets/36dba258-d79c-438b-807f-fcc0169e895e)
+
 
 ---
 
@@ -21,22 +21,25 @@ Execute the commands in the given sequence:
 ```bash
 sinfo  # To see partition names
 ```
-![sinfo](https://github.com/user-attachments/assets/01168fea-442b-463c-8725-b0ac1661fe14)
-
+![sinfo](https://github.com/user-attachments/assets/c5d96234-f6f9-4f47-9104-ac35cc33bf68)
 ```
 salloc -N 1 -p <partition-name> --exclusive  # To assign a node
 squeue --me  # To see the assigned node name
 ssh <node-name>  # To log in to the assigned node
 ```
-![salloc, squeue, ssh](https://github.com/user-attachments/assets/7658fc77-38e8-46ab-b444-eaf82fc1251f)
+![salloc, squeue, ssh](https://github.com/user-attachments/assets/7629194c-36b1-49f9-bde5-3499c7b640a7)
+
 
 
 After logging into the assigned node, follow these steps:
 
 #### 1️⃣ Load the Application
 ```bash
-module load MSCC/ann-ci
+module avail | grep -i mscc #List all MSCC applications
+module load MSCC/ann-ci     #Load ann-ci
 ```
+![ml av, module load](https://github.com/user-attachments/assets/10b226df-1f10-4a50-8728-89b06626eac8)
+
 
 #### 2️⃣ Create the Input and Bond Order Files
 Both files should be in the same directory.
