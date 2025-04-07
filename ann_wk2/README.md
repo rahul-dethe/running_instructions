@@ -44,43 +44,41 @@ module load MSCC/ann-ci     #Load ann-ci
 #### 2️⃣ Create the Input and Bond Order Files
 Both files should be in the same directory.
 
-📌 **Example Input File (16 nsites)**:
+📌 **Example Input File (14 nsites)**:
 ```
 ***startSetup***
 model,HB
-nSite,16
-subSpace,500
+nSite,14
+subSpace,200
 nStates,10
 Ms,1,0
 s2Target,0
-maxItr,50
+maxItr,10
 startSpinTargetItr,5
-energyTola,0.01
-spinTola,0.1
+energyTola, 0.0005
+spinTola,0.05
 jValue,1
 beta,38.61
-bondOrder,bondOrder-lc16.dat
+bondOrder,bondOrder-chain14.dat
 restart,False
 ***endSetup***
 ```
 
-📌 **Example Bond Order File (16 nsites)**:
+📌 **Example Bond Order File (14 nsites)**:
 ```
-1   2
-2   3
-3   4
-4   5
-5   6
-6   7
-7   8
-8   9
-9   10
-10  11
-11  12
-12  13
-13  14
-14  15
-15  16
+1       2
+2       3
+3       4
+4       5
+5       6
+6       7
+7       8
+8       9
+9       10
+10      11
+11      12
+12      13
+13      14
 ```
 
 #### 3️⃣ Run the Application
