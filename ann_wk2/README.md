@@ -6,7 +6,7 @@
 ---
 
 ##  Step 1: Log in to the NSM System
-If you don’t have access, please contact **mscc-support@cdac.in**.
+If you do not have access to any NSM system and would like to create an account, please contact **mscc-support@cdac.in**.
 
 
 
