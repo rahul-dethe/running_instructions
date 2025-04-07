@@ -8,6 +8,9 @@
 ##  Step 1: Log in to the NSM System
 If you don’t have access, please contact **mscc-support@cdac.in**.
 
+![image](https://github.com/user-attachments/assets/2952413b-ae62-4814-840b-2918a0b57e0b)
+
+
 ---
 
 ##  Step 2: Running an Application
