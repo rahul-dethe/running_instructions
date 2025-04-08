@@ -25,8 +25,8 @@ sinfo  # To see partition names
 
 ```
 salloc -N 1 -p <partition-name> --exclusive  # To assign a node
-squeue --me  # To see the assigned node name
-ssh <node-name>  # To log in to the assigned node
+squeue --me                                  # To see the assigned node name
+ssh <node-name>                              # To log in to the assigned node
 ```
 ![salloc, squeue, ssh_label](https://github.com/user-attachments/assets/5b47c8f6-c512-4250-84e2-f333edd2bc76)
 
