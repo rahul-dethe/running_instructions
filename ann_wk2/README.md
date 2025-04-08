@@ -5,17 +5,16 @@
 
 ---
 
-##  Step 1: Log in to the NSM System
-If you do not have access to any NSM system and would like to create an account, please contact **mscc-support@cdac.in**.
-
-
+##  Step 1: Login to the NSM System
+If you already have a user account in any of the NSM systems, please use your existing credentials to log in.
+If you do not have access to any NSM system and wish to create an account, please contact **mscc-support@cdac.in**.
 
 ---
 
 ##  Step 2: Running the Application
 There are two ways to run an application: **Interactive Mode** and **Non-Interactive Mode**.
 
-### 🔹 A) Running in 'Interactive Mode'
+### A) Running in 'Interactive Mode'
 Execute the commands in the given sequence:
 
 ```bash
