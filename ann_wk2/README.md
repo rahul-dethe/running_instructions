@@ -46,24 +46,31 @@ module load MSCC/ann-ci                     # Load ann-ci
 #### 2️⃣ Create the Input and Bond Order Files
 Both files should be in the same directory.
 
-📌 **Example Input File (14 nsites)**:
+## 🔧 Setup of Input File (14 nsites)
+
+In the input file, arguments are given in `"P,Q,R"` format, where:
+
+- **P** is the keyword
+- **Q, R** are values associated with the keyword
+
+The setup section is defined between `***startSetup***` and `***endSetup***`.
 ```
-***startSetup***
-model,HB
-nSite,14
-subSpace,200
-nStates,10
-Ms,1,0
-s2Target,0
-maxItr,10
-startSpinTargetItr,5
-energyTola, 0.0005
-spinTola,0.05
-jValue,1
-beta,38.61
-bondOrder,bondOrder-chain14.dat
-restart,False
-***endSetup***
+***startSetup***                  # First line of the input setup file
+model,HB                          # Hamiltonian model, HB for Heisenberg Hamiltonian model
+nSite,14                          # Number of the sites in the system. Here, 14 sites
+subSpace,200                      # Initial size of the sub-Hilbert space; starting with 200 configurations
+nStates,10                        # Number of states on which spin states are calculated
+Ms,1,0                            # Z component of spin: 1st = number of values, 2nd = value (e.g., 0)
+s2Target,0                        # Spin value of target states: 0 = singlet, 2 = triplet
+maxItr,10                         # Maximum number of iterations
+startSpinTargetItr,5              # Iteration from which spin targeting starts (minimum is 5)
+energyTola, 0.0005                # Energy convergence threshold
+spinTola,0.05                     # Spin convergence threshold
+jValue,1                          # Coupling constant
+beta,38.61                        # kT value for Boltzmann probability distribution
+bondOrder,bondOrder-chain14.dat   # Bond order file (contains node connection info)
+restart,False                     # Restart status; use "True" to resume from previous state
+***endSetup***                    # Last line of the setup file 
 ```
 
 📌 **Example Bond Order File (14 nsites)**:
