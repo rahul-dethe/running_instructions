@@ -37,8 +37,8 @@ After logging into the assigned node, follow these steps:
 
 #### 1️⃣ Load the Application
 ```bash
-module avail | grep -i mscc #List all MSCC applications
-module load MSCC/ann-ci     #Load ann-ci
+module avail | grep -i mscc                 # List all MSCC applications
+module load MSCC/ann-ci                     # Load ann-ci
 ```
 ![ml av, module load](https://github.com/user-attachments/assets/10b226df-1f10-4a50-8728-89b06626eac8)
 
@@ -93,11 +93,11 @@ A total of 10 output files are generated after successful calculations.
 The main files are:
 
 ```
-1)  input_file.in.out                     # Main output file, which contains information on subspace size, energy
-2)  input_file.in.out.basis               # Configurations of final sub-Hilbert space
-3)  input_file.in.out.ci                  # CI coefficient corresponding to configurations
-4)  input_file.in.out.model.pth           # Final optimized ANN model
-5)  input_file.in.out.error.dat           # Train and test error at each AL iteration
+1)  input_file.in.out                        # Main output file, which contains information on subspace size, energy
+2)  input_file.in.out.basis                  # Configurations of final sub-Hilbert space
+3)  input_file.in.out.ci                     # CI coefficient corresponding to configurations
+4)  input_file.in.out.model.pth              # Final optimized ANN model
+5)  input_file.in.out.error.dat              # Train and test error at each AL iteration
 6)  input_file.in.out.TrainData_subSpace.csv # Train data set generated during calculation
 ```
 
@@ -116,30 +116,38 @@ It is recommended to delete these files to keep the directory clean.
 ---
 
 ### 🔹 B) Running an Application in 'Non-Interactive Mode'
-While on the **login node**, create a `.sh` file (SLURM script) and copy the lines below:
+Create a file `job.sh`
+This is a SLURM batch script used to submit a job to a computing cluster that uses the SLURM workload manager. It automates the job setup, runs your application, and handles input/output.
 
 ```bash
 #!/bin/bash
-#SBATCH --job-name=sys14  # Display name for your job
-#SBATCH --nodes=1  # Number of nodes
-#SBATCH --exclusive  # Assign a full node exclusively
-#SBATCH --partition=cpu  # Partition name
-#SBATCH --time=48:00:00  # Time allocation for the node
-#SBATCH --output=%j.out  # Output file
-#SBATCH --error=%j.err  # Error file in case of failure
+#SBATCH --job-name=sys14  # This sets the name of your job
+#SBATCH --nodes=1         # Requesting compute node
+#SBATCH --exclusive       # Reserves the entire node for your job only
+#SBATCH --partition=cpu   # Specifies the partition
+#SBATCH --time=48:00:00   # Sets the maximum time limit
+#SBATCH --output=%j.out   # Output file
+#SBATCH --error=%j.err    # Error file in case of failure
 
-module load MSCC/ann-ci  # Load the application
-cd $SLURM_SUBMIT_DIR  # Change to the directory where input files are located
-exe.py <your_input_file>  # Run the application
+module load MSCC/ann-ci   # Loads the software module required to run your application
+cd $SLURM_SUBMIT_DIR      # Changes to the directory where you submitted the job from
+exe.py <your_input_file>  # Runs your main application
 ```
+> 📌 **Note:** The names of partitions, modules, and other settings may be different on each NSM HPC cluster.  
+> You should manually check your cluster’s documentation to confirm the correct names and update the script accordingly.
 
 ---
 
 ## 🚀 Step 3: Execute the SLURM Script
-Run the following command to start the job:
+
+Once your `job.sh` file is ready, you can submit your job to the cluster using the command below:
+
 ```bash
-sbatch script.sh
+sbatch job.sh
 ```
+
+This tells the SLURM scheduler to run your job according to the instructions you mentioned in the script.  
+If everything is set up correctly, SLURM will assign resources and begin processing your job in the background.  
 
 ---
 
