@@ -11,33 +11,77 @@ If you do not have access to any NSM system and wish to create an account, pleas
 
 ---
 
-##  Step 2: Running the Application
+##  Step 2: Create input and bond Order file or download the sample input files available in this Github repository.
+
+## 🔧 Setup of Input File (for system 14 nsites)
+User needs to configure the input file based on system in considerations. There is no restriction on the name of input file but the extension should be ".in"
+In the input file, arguments are given in `"P,Q,R"` format, where:
+
+- **P** is the keyword
+- **Q, R** are values associated with the keyword
+
+The setup section is defined between `***startSetup***` and `***endSetup***`.
+```
+***startSetup***                  # First line of the input setup file
+model,HB                          # Hamiltonian model, HB for Heisenberg Hamiltonian model
+nSite,14                          # Number of the sites in the system. Here, 14 sites
+subSpace,200                      # Initial size of the sub-Hilbert space; starting with 200 configurations
+nStates,10                        # Number of states on which spin states are calculated
+Ms,1,0                            # Z component of spin: 1st = number of values, 2nd = value (e.g., 0)
+s2Target,0                        # Spin value of target states: 0 = singlet, 2 = triplet
+maxItr,10                         # Maximum number of iterations
+startSpinTargetItr,5              # Iteration from which spin targeting starts (minimum is 5)
+energyTola, 0.0005                # Energy convergence threshold
+spinTola,0.05                     # Spin convergence threshold
+jValue,1                          # Coupling constant
+beta,38.61                        # kT value for Boltzmann probability distribution
+bondOrder,bondOrder-chain14.dat   # Bond order file (contains node connection info)
+restart,False                     # Restart status; use "True" to resume from previous state
+***endSetup***                    # Last line of the setup file 
+```
+
+📌 **Bond Order File (14 nsites)**:
+```
+1       2
+2       3
+3       4
+4       5
+5       6
+6       7
+7       8
+8       9
+9       10
+10      11
+11      12
+12      13
+13      14
+```
+
+
 There are two ways to run an application: **Interactive Mode** and **Non-Interactive Mode**.
 
 ### A) Running in 'Interactive Mode'
 Execute the commands in the given sequence:
 
 ```bash
-sinfo  # To see partition names
+Command 1) sinfo  # To see partition names
 ```
 ![sinfo_label](https://github.com/user-attachments/assets/a8e063f6-1628-4cbb-bdf0-f040e53c0dd6)
 
 ```
-salloc -N 1 -p <partition-name> --exclusive  # To assign a node
-squeue --me                                  # To see the assigned node name
-ssh <node-name>                              # To log in to the assigned node
+Command 2) salloc -N 1 -p <partition-name> --exclusive  # To assign a node
+Command 3) squeue --me                                  # To see the assigned node name
+Command 4) ssh <node-name>                              # To log in to the assigned node
 ```
 ![salloc, squeue, ssh_label](https://github.com/user-attachments/assets/5b47c8f6-c512-4250-84e2-f333edd2bc76)
 
 
-
-
 After logging into the assigned node, follow these steps:
 
-#### 1️⃣ Load the Application
+#### 1️⃣ Loading the Application
 ```bash
-module avail | grep -i mscc                 # List all MSCC applications
-module load MSCC/ann-ci                     # Load ann-ci
+Command 5) module avail | grep -i mscc                 # List all MSCC applications
+Command 6) module load MSCC/ann-ci                     # Load ann-ci
 ```
 ![ml av, module load](https://github.com/user-attachments/assets/10b226df-1f10-4a50-8728-89b06626eac8)
 
