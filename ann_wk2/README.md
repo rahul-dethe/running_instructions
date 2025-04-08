@@ -21,7 +21,8 @@ Execute the commands in the given sequence:
 ```bash
 sinfo  # To see partition names
 ```
-![sinfo](https://github.com/user-attachments/assets/c5d96234-f6f9-4f47-9104-ac35cc33bf68)
+![sinfo_label](https://github.com/user-attachments/assets/a8e063f6-1628-4cbb-bdf0-f040e53c0dd6)
+
 ```
 salloc -N 1 -p <partition-name> --exclusive  # To assign a node
 squeue --me  # To see the assigned node name
