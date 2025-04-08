@@ -147,6 +147,8 @@ Once your `job.sh` file is ready, you can submit your job to the cluster using t
 ```bash
 sbatch job.sh
 ```
+![sbatch_submitted](https://github.com/user-attachments/assets/9ed93413-f51a-423c-a19b-6d2a54458fe4)
+
 
 This tells the SLURM scheduler to run your job according to the instructions you mentioned in the script.  
 If everything is set up correctly, SLURM will assign resources and begin processing your job in the background.  
