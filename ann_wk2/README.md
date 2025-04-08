@@ -73,7 +73,7 @@ restart,False                     # Restart status; use "True" to resume from pr
 ***endSetup***                    # Last line of the setup file 
 ```
 
-📌 **Example Bond Order File (14 nsites)**:
+📌 **Bond Order File (14 nsites)**:
 ```
 1       2
 2       3
