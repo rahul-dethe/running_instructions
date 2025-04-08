@@ -147,14 +147,16 @@ Once your `job.sh` file is ready, you can submit your job to the cluster using t
 ```bash
 sbatch job.sh
 ```
+This tells the SLURM scheduler to run your job according to the instructions you mentioned in the script.  
+If everything is set up correctly, SLURM will assign resources and begin processing your job in the background. 
+
 ![sbatch with squeue](https://github.com/user-attachments/assets/ca2cb65b-b993-468c-a59f-53084726d9ba)
 
+## Output Files
+![ann_output](https://github.com/user-attachments/assets/48e011a7-b559-4d27-b7f3-14e33fa28b9a)
 
-
-This tells the SLURM scheduler to run your job according to the instructions you mentioned in the script.  
-If everything is set up correctly, SLURM will assign resources and begin processing your job in the background.  
 
 ---
 
-✅ Following these steps ensures proper execution of MSCC applications on NSM systems. 🚀
+✅ Following these steps ensures proper execution of ANN-CI on any NSM systems. 🚀
 
