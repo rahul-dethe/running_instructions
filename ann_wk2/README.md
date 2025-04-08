@@ -117,7 +117,7 @@ It is recommended to delete these files to keep the directory clean.
 
 ### 🔹 B) Running an Application in 'Non-Interactive Mode'
 Create a file `job.sh`
-This is a SLURM batch script used to submit a job to a computing cluster that uses the SLURM workload manager. It automates the job setup, runs your application, and handles input/output.
+This is a SLURM batch script used to submit a job to a computing cluster. It automates the job setup, runs your application, and handles input/output.
 
 ```bash
 #!/bin/bash
