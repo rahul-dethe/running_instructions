@@ -87,6 +87,31 @@ restart,False
 ```bash
 exe.py <your_input_file>
 ```
+## Output Files
+
+A total of 10 output files are generated after successful calculations.
+The main files are:
+
+```
+1)  input_file.in.out                     # Main output file, which contains information on subspace size, energy
+2)  input_file.in.out.basis               # Configurations of final sub-Hilbert space
+3)  input_file.in.out.ci                  # CI coefficient corresponding to configurations
+4)  input_file.in.out.model.pth           # Final optimized ANN model
+5)  input_file.in.out.error.dat           # Train and test error at each AL iteration
+6)  input_file.in.out.TrainData_subSpace.csv # Train data set generated during calculation
+```
+
+These files are essential for system analysis. In addition, there are four more files:
+
+```
+7)  input_file.in.out.predictData.csv
+8)  input_file.in.out.accVsPreTest.dat
+9)  input_file.in.out.accVsPreTrain.dat
+10) input_file.in.out.enrich.csv
+```
+
+These are scratch files generated during calculations.
+It is recommended to delete these files to keep the directory clean.
 
 ---
 
