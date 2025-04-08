@@ -133,6 +133,8 @@ module load MSCC/ann-ci   # Loads the software module required to run your appli
 cd $SLURM_SUBMIT_DIR      # Changes to the directory where you submitted the job from
 exe.py <your_input_file>  # Runs your main application
 ```
+![sbatch script](https://github.com/user-attachments/assets/541dc399-db92-4def-870e-191de06d6b18)
+
 > 📌 **Note:** The names of partitions, modules, and other settings may be different on each NSM HPC cluster.  
 > You should manually check your cluster’s documentation to confirm the correct names and update the script accordingly.
 
