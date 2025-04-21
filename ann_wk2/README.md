@@ -147,7 +147,7 @@ exe.py <your_input_file>  # Runs your main application
 Once your `job.sh` file is ready, you can submit your job to the cluster using the command below:
 
 ```bash
-sbatch job.sh
+sbatch job.sh             # Executing the batch script
 ```
 This tells the SLURM scheduler to run your job according to the instructions you mentioned in the script.  
 If everything is set up correctly, SLURM will assign resources and begin processing your job in the background. 
