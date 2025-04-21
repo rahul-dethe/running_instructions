@@ -142,7 +142,7 @@ exe.py <your_input_file>  # Runs your main application
 
 ---
 
-## 🚀 Step 3: Execute the SLURM Script
+## Step 3: Execute the SLURM Script
 
 Once your `job.sh` file is ready, you can submit your job to the cluster using the command below:
 
