@@ -43,7 +43,7 @@ restart,False                     # Restart status; use "True" to resume from pr
 
 ```
 
-📌 **Bond Order File (14 nsites)**:
+📌 **Bond Order File (10 nsites)**:
 ```
 1       2
 2       3
@@ -59,13 +59,13 @@ restart,False                     # Restart status; use "True" to resume from pr
 ```
 
 
-##  Step 3: Running the application: There are two modes in which you can run **Interactive Mode** and **Non-Interactive Mode**.
+##  Step 3: Running the application: There are two modes in which you can run the application **Interactive Mode** and **Non-Interactive Mode**.
 
 ### A) Running in 'Interactive Mode'
 Execute the commands in the given sequence:
 
 ```bash
-Command 1) sinfo  # To see partition names
+Command 1) sinfo                                        # To see partition names
 ```
 ![sinfo_label](https://github.com/user-attachments/assets/a8e063f6-1628-4cbb-bdf0-f040e53c0dd6)
 
@@ -86,7 +86,7 @@ Command 6) module load MSCC/ann-ci                     # Load ann-ci
 
 Command to run the Application
 ```bash
-exe.py <your_input_file>
+exe.py <your_input_file>                               # To run the application
 ```
 ## Output Files
 
@@ -122,7 +122,7 @@ This is a SLURM batch script used to submit a job to a computing cluster. It aut
 
 ```bash
 #!/bin/bash
-#SBATCH --job-name=sys14  # This sets the name of your job
+#SBATCH --job-name=sys10  # This sets the name of your job
 #SBATCH --nodes=1         # Requesting compute node
 #SBATCH --exclusive       # Reserves the entire node for your job only
 #SBATCH --partition=cpu   # Specifies the partition
@@ -130,7 +130,7 @@ This is a SLURM batch script used to submit a job to a computing cluster. It aut
 #SBATCH --output=%j.out   # Output file
 #SBATCH --error=%j.err    # Error file in case of failure
 
-module load MSCC/ann-ci   # Loads the software module required to run your application
+module load MSCC/ann-ci   # Kindly check the module name and replace the command accordingly
 cd $SLURM_SUBMIT_DIR      # Changes to the directory where you submitted the job from
 exe.py <your_input_file>  # Runs your main application
 ```
