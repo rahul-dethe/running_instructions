@@ -22,6 +22,7 @@ In the input file, arguments are given in `"P,Q,R"` format, where:
 - **Q, R** are values associated with the keyword
 
 The setup section is defined between `***startSetup***` and `***endSetup***`.
+NOTE: Kindly remove the comment lines
 ```
 
 ***startSetup***                  # First line of the input setup file
