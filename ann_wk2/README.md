@@ -10,10 +10,11 @@ If you already have a user account in any of the NSM systems, please use your ex
 If you do not have access to any NSM system and wish to create an account, please contact **mscc-support@cdac.in**.
 
 ---
+After login
 
 ##  Step 2: Create input and bond Order file or download the sample input files available in this Github repository.
 
-## 🔧 Setup of Input File (for system 14 nsites)
+## 🔧 Setup of Input File (for system 10 nsites)
 User needs to configure the input file based on system in considerations. There is no restriction on the name of input file but the extension should be ".in"
 In the input file, arguments are given in `"P,Q,R"` format, where:
 
@@ -22,22 +23,24 @@ In the input file, arguments are given in `"P,Q,R"` format, where:
 
 The setup section is defined between `***startSetup***` and `***endSetup***`.
 ```
+
 ***startSetup***                  # First line of the input setup file
 model,HB                          # Hamiltonian model, HB for Heisenberg Hamiltonian model
-nSite,14                          # Number of the sites in the system. Here, 14 sites
-subSpace,200                      # Initial size of the sub-Hilbert space; starting with 200 configurations
+nSite,10                          # Number of the sites in the system. Here, 14 sites
+subSpace,100                      # Initial size of the sub-Hilbert space; starting with 200 configurations
 nStates,10                        # Number of states on which spin states are calculated
 Ms,1,0                            # Z component of spin: 1st = number of values, 2nd = value (e.g., 0)
 s2Target,0                        # Spin value of target states: 0 = singlet, 2 = triplet
-maxItr,10                         # Maximum number of iterations
-startSpinTargetItr,5              # Iteration from which spin targeting starts (minimum is 5)
-energyTola, 0.0005                # Energy convergence threshold
-spinTola,0.05                     # Spin convergence threshold
+maxItr,15                         # Maximum number of iterations
+startSpinTargetItr,15             # Iteration from which spin targeting starts (minimum is 5)
+energyTola, 0.0001                # Energy convergence threshold
+spinTola,0.01                     # Spin convergence threshold
 jValue,1                          # Coupling constant
 beta,38.61                        # kT value for Boltzmann probability distribution
-bondOrder,bondOrder-chain14.dat   # Bond order file (contains node connection info)
+bondOrder,bondOrder-pah10.dat     # Bond order file (contains node connection info)
 restart,False                     # Restart status; use "True" to resume from previous state
-***endSetup***                    # Last line of the setup file 
+***endSetup***                    # Last line of the setup file
+
 ```
 
 📌 **Bond Order File (14 nsites)**:
@@ -51,10 +54,8 @@ restart,False                     # Restart status; use "True" to resume from pr
 7       8
 8       9
 9       10
-10      11
-11      12
-12      13
-13      14
+10      1
+5       10
 ```
 
 
