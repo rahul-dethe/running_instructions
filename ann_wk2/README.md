@@ -1,4 +1,4 @@
-# Guide to Running ANN-CI on NSM Systems
+![ml av, module load](https://github.com/user-attachments/assets/8277b75e-d65a-4e18-97f0-d6533a712619)# Guide to Running ANN-CI on NSM Systems
 
 ## ⚠️ Important Note
 **Do not run MSCC applications on login nodes!**
@@ -82,7 +82,8 @@ After logging into the assigned node, we have to load the Application
 Command 5) module avail | grep -i mscc                 # List all MSCC applications
 Command 6) module load MSCC/ann-ci                     # Load ann-ci
 ```
-![ml av, module load](https://github.com/user-attachments/assets/10b226df-1f10-4a50-8728-89b06626eac8)
+![ml av, module load](https://github.com/user-attachments/assets/31d26243-ac44-4d71-a314-f772da6b32fd)
+
 
 Command to run the Application
 ```bash
