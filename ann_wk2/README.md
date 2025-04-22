@@ -69,7 +69,7 @@ This is a script used to submit a job to a computing cluster. It automates the j
 #!/bin/bash
 #SBATCH --job-name=sys10       # Set the job name
 #SBATCH --nodes=1              # Request one compute node
-#SBATCH --partition=standard   # Request one compute node
+#SBATCH --partition=standard   # Specify the partition/queue
 #SBATCH --time=48:00:00        # Set maximum execution time
 #SBATCH --output=%j.out        # File to save standard output
 #SBATCH --error=%j.err         # File to save error messages
@@ -98,28 +98,24 @@ After successful execution, 10 output files are generated. The key files include
 2)  input_file.in.out.basis                  # Configurations of final sub-Hilbert space
 3)  input_file.in.out.ci                     # CI coefficient corresponding to configurations
 4)  input_file.in.out.model.pth              # Final optimized ANN model
-5)  input_file.in.out.error.dat              # Train and test error at each AL iteration
-6)  input_file.in.out.TrainData_subSpace.csv # Train data set generated during calculation
+5)  input_file.in.out.error.dat              # Training and testing errors at each Active Learning iteration.
+6)  input_file.in.out.TrainData_subSpace.csv #Training dataset generated during the calculation.
 ```
-
-These files are essential for system analysis. In addition, there are four more files:
-
+These files are essential for analyzing the system and model performance. In addition, there are four more files, the following are scratch files created during the computation process:
 ```
 7)  input_file.in.out.predictData.csv
 8)  input_file.in.out.accVsPreTest.dat
 9)  input_file.in.out.accVsPreTrain.dat
 10) input_file.in.out.enrich.csv
 ```
-
-These are scratch files generated during calculations.
 It is recommended to delete these files to keep the directory clean.
 
 ## Output Files
 ![output files](https://github.com/user-attachments/assets/17d9ee71-dbcd-4023-b4b9-251bf66585f8)
 
----
-Please refer to the tutorial video for more detailed running instructions: https://youtu.be/R2KRXly2RBo?si=Wd9UUfS0lKd2Ayfy
----
+
+- Please refer to the tutorial video for more detailed running instructions: https://youtu.be/R2KRXly2RBo?si=Wd9UUfS0lKd2Ayfy
+
 
 
 > 📌 **Note:** The names of partitions, modules, and other settings may be different on each NSM HPC cluster.  
