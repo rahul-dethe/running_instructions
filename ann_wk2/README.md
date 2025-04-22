@@ -28,13 +28,12 @@ Command 1) salloc -N 1                                  # To assign a node
 Command 2) squeue --me                                  # To see the assigned node name
 Command 3) ssh <node-name>                              # To log in to the assigned node
 ```
-![salloc, squeue, ssh_label](https://github.com/user-attachments/assets/5b47c8f6-c512-4250-84e2-f333edd2bc76)
-
+![salloc](https://github.com/user-attachments/assets/f2fba0bc-9167-4e27-ba08-ea474a0aa739)
 
 After logging into the assigned node, we have to load the Application
 ```bash
-Command 5) module avail | grep -i mscc                 # List all MSCC applications
-Command 6) module load MSCC/ann-ci                     # Load ann-ci
+Command 4) module avail | grep -i mscc                 # List all MSCC applications
+Command 5) module load MSCC/ann-ci                     # Load ann-ci
 ```
 ![ml av, module load](https://github.com/user-attachments/assets/8277b75e-d65a-4e18-97f0-d6533a712619)
 
