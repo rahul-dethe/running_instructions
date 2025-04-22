@@ -43,8 +43,11 @@ ssh <node-name>
 
 - After logging into the node, you need to load the ANN-CI application module by using the following commands
 ```bash
-Command 4) module avail | grep -i mscc                 # List all MSCC applications
-Command 5) module load MSCC/ann-ci                     # Load ann-ci
+# Command 4: List all MSCC applications
+module avail | grep -i mscc
+
+# Command 5: Load the ANN-CI application
+module load MSCC/ann-ci
 ```
 ![choose ann-ci](https://github.com/user-attachments/assets/baa3c322-20b5-488c-9c68-cfcb178345d2)
 
@@ -58,44 +61,40 @@ exe.py <your_input_file>                      # Replace <your_input_file> with t
 ![running the application](https://github.com/user-attachments/assets/9a37669c-4eb3-4067-a080-f1886e5dddac)
 
 ### B) Non-Interactive Mode
-Create a file `job.sh`
+You can also run the application using the job submission script.
+- Create a file named job.sh with the following content:
 This is a script used to submit a job to a computing cluster. It automates the job setup, runs your application, and handles input/output.
 
 ```bash
 #!/bin/bash
-#SBATCH --job-name=sys10       # This sets the name of your job
-#SBATCH --nodes=1              # Requesting compute node
-#SBATCH --partition=standard   # Specifies the partition
-#SBATCH --time=48:00:00        # Sets the maximum time limit
-#SBATCH --output=%j.out        # Output file
-#SBATCH --error=%j.err         # Error file in case of failure
+#SBATCH --job-name=sys10       # Set the job name
+#SBATCH --nodes=1              # Request one compute node
+#SBATCH --partition=standard   # Request one compute node
+#SBATCH --time=48:00:00        # Set maximum execution time
+#SBATCH --output=%j.out        # File to save standard output
+#SBATCH --error=%j.err         # File to save error messages
 
-module load MSCC/ann-ci        # Kindly check the module name and replace the command accordingly
-cd $SLURM_SUBMIT_DIR           # Changes to the directory where you submitted the job from
-exe.py <input_file>            # Runs your main application
+module load MSCC/ann-ci        # Load the ANN-CI module (verify module name if needed)
+cd $SLURM_SUBMIT_DIR           # Navigate to the job submission directory
+exe.py <input_file>            # Run the ANN-CI application (replace <input_file> accordingly)
 
 ```
 ![running the application](https://github.com/user-attachments/assets/95bec1f7-429f-4313-8aeb-c29e3ef06428)
 
-## Step 3: Execute the Script file
-
+- To run the application, submit the above job submission script using the below command 
 Once your `job.sh` file is ready, run the script using the command below:
 
 ```bash
-sbatch job.sh             # Executing the batch script
+sbatch job.sh             # Submit the batch job
 ```
-This tells the SLURM scheduler to run your job according to the instructions you mentioned in the script.  
-If everything is set up correctly, SLURM will assign resources and begin processing your job in the background. 
-
 ![sbatch job sh](https://github.com/user-attachments/assets/6e1a50e3-64d6-4816-b042-fb2a06b195c4)
 
-## Output Files
+## Step 4: Output Files
 
-A total of 10 output files are generated after successful calculations.
-The main files are:
+After successful execution, 10 output files are generated. The key files include:
 
 ```
-1)  input_file.in.out                        # Main output file, which contains information on subspace size, energy
+1)  input_file.in.out                        # Main output file containing information on subspace size and calculated energy.
 2)  input_file.in.out.basis                  # Configurations of final sub-Hilbert space
 3)  input_file.in.out.ci                     # CI coefficient corresponding to configurations
 4)  input_file.in.out.model.pth              # Final optimized ANN model
