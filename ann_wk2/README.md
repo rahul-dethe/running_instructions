@@ -81,9 +81,7 @@ This is a script used to submit a job to a computing cluster. It automates the j
 module load MSCC/ann-ci        # Load the ANN-CI module (verify module name if needed)
 cd $SLURM_SUBMIT_DIR           # Navigate to the job submission directory
 exe.py <input_file>            # Run the ANN-CI application (replace <input_file> accordingly)
-
 ```
-![running the application](https://github.com/user-attachments/assets/95bec1f7-429f-4313-8aeb-c29e3ef06428)
 
 - To run the application, submit the above job submission script using the below command 
 Once your `job.sh` file is ready, run the script using the command below:
