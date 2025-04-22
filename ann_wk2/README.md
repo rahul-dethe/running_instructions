@@ -9,71 +9,23 @@
 ## ⚠️ Important Note
 **Do not run MSCC applications on login nodes!**
 ---
-After login
+After logging in
 
 ##  Step 2: Prepare your input and bond Order file or download the sample input files from this Github repository.
 For more details regarding creation of input and bond Order file please refer this repository: https://github.com/dghoshlab/AL-MCCI
 
-## 🔧 Setup of Input File (for system 10 nsites)
-User needs to configure the input file based on system in considerations. There is no restriction on the name of input file but the extension should be ".in"
-In the input file, arguments are given in `"P,Q,R"` format, where:
 
-- **P** is the keyword
-- **Q, R** are values associated with the keyword
+##  Step 3: Run the application 
+There are two modes in which you can run the application **Interactive Mode** and **Non-Interactive Mode**.
 
-The setup section is defined between `***startSetup***` and `***endSetup***`.
-NOTE: Kindly remove the comment lines
-```
-
-***startSetup***                  # First line of the input setup file
-model,HB                          # Hamiltonian model, HB for Heisenberg Hamiltonian model
-nSite,10                          # Number of the sites in the system. Here, 14 sites
-subSpace,100                      # Initial size of the sub-Hilbert space; starting with 200 configurations
-nStates,10                        # Number of states on which spin states are calculated
-Ms,1,0                            # Z component of spin: 1st = number of values, 2nd = value (e.g., 0)
-s2Target,0                        # Spin value of target states: 0 = singlet, 2 = triplet
-maxItr,15                         # Maximum number of iterations
-startSpinTargetItr,15             # Iteration from which spin targeting starts (minimum is 5)
-energyTola, 0.0001                # Energy convergence threshold
-spinTola,0.01                     # Spin convergence threshold
-jValue,1                          # Coupling constant
-beta,38.61                        # kT value for Boltzmann probability distribution
-bondOrder,bondOrder-pah10.dat     # Bond order file (contains node connection info)
-restart,False                     # Restart status; use "True" to resume from previous state
-***endSetup***                    # Last line of the setup file
-
-```
-
-📌 **Bond Order File (10 nsites)**:
-```
-1       2
-2       3
-3       4
-4       5
-5       6
-6       7
-7       8
-8       9
-9       10
-10      1
-5       10
-```
-
-
-##  Step 3: Running the application: There are two modes in which you can run the application **Interactive Mode** and **Non-Interactive Mode**.
-
-### A) Running in 'Interactive Mode'
+### A) 'Interactive Mode'
+In this process we manually allocate a node and then run the applicaion in that node.
 Execute the commands in the given sequence:
 
 ```bash
-Command 1) sinfo                                        # To see partition names
-```
-![sinfo_label](https://github.com/user-attachments/assets/a8e063f6-1628-4cbb-bdf0-f040e53c0dd6)
-
-```
-Command 2) salloc -N 1 -p <partition-name> --exclusive  # To assign a node
-Command 3) squeue --me                                  # To see the assigned node name
-Command 4) ssh <node-name>                              # To log in to the assigned node
+Command 1) salloc -N 1                                  # To assign a node
+Command 2) squeue --me                                  # To see the assigned node name
+Command 3) ssh <node-name>                              # To log in to the assigned node
 ```
 ![salloc, squeue, ssh_label](https://github.com/user-attachments/assets/5b47c8f6-c512-4250-84e2-f333edd2bc76)
 
