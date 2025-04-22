@@ -12,6 +12,7 @@
 After login
 
 ##  Step 2: Prepare your input and bond Order file or download the sample input files from this Github repository.
+For more details regarding creation of input and bond Order file please refer this repository: [https://github.com/koushik-bug/AL-MCCI](url)
 
 ## 🔧 Setup of Input File (for system 10 nsites)
 User needs to configure the input file based on system in considerations. There is no restriction on the name of input file but the extension should be ".in"
