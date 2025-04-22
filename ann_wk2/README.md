@@ -41,7 +41,7 @@ squeue --me
 ssh <node-name>
 
 ```
-![salloc](https://github.com/user-attachments/assets/f2fba0bc-9167-4e27-ba08-ea474a0aa739)
+![job script](https://github.com/user-attachments/assets/2144f1da-f979-4a01-bc6e-d1cc794256f0)
 
 - After logging into the node, you need to load the ANN-CI application module by using the following commands
 ```bash
