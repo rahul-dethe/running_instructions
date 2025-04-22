@@ -1,18 +1,17 @@
 # Guide to Running ANN-CI on NSM Systems
 
-## ⚠️ Important Note
-**Do not run MSCC applications on login nodes!**
-
 ---
 
 ##  Step 1: Login to the NSM System
-If you already have a user account in any of the NSM systems, please use your existing credentials to log in.
-If you do not have access to any NSM system and wish to create an account, please contact **mscc-support@cdac.in**.
+• If have a user account in any of the NSM system, please use your existing credentials to log in.
+• If you do not have access to any NSM system and wish to create an account, please contact **mscc-support@cdac.in**.
 
+## ⚠️ Important Note
+**Do not run MSCC applications on login nodes!**
 ---
 After login
 
-##  Step 2: Create input and bond Order file or download the sample input files available in this Github repository.
+##  Step 2: Prepare your input and bond Order file or download the sample input files from this Github repository.
 
 ## 🔧 Setup of Input File (for system 10 nsites)
 User needs to configure the input file based on system in considerations. There is no restriction on the name of input file but the extension should be ".in"
