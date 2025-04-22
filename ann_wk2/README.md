@@ -117,10 +117,4 @@ It is recommended to delete these files to keep the directory clean.
 
 
 - Please refer to the tutorial video for more detailed running instructions: https://youtu.be/R2KRXly2RBo?si=Wd9UUfS0lKd2Ayfy
-
-
-
-> 📌 **Note:** The names of partitions, modules, and other settings may be different on each NSM HPC cluster.  
-> Please check your cluster’s documentation to confirm the correct names and update the script accordingly.
-
 ---
