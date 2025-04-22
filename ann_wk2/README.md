@@ -59,7 +59,8 @@ cd $SLURM_SUBMIT_DIR           # Changes to the directory where you submitted th
 exe.py <input_file>            # Runs your main application
 
 ```
-![script](https://github.com/user-attachments/assets/37de3116-4c6e-4873-96fe-035a12451d7a)
+![running the application](https://github.com/user-attachments/assets/95bec1f7-429f-4313-8aeb-c29e3ef06428)
+
 
 
 ## Output Files
