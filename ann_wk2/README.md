@@ -103,9 +103,7 @@ If everything is set up correctly, SLURM will assign resources and begin process
 
 
 ## Output Files
-![ann_output](https://github.com/user-attachments/assets/48e011a7-b559-4d27-b7f3-14e33fa28b9a)
-
-
+![output files](https://github.com/user-attachments/assets/17d9ee71-dbcd-4023-b4b9-251bf66585f8)
 
 ---
 Please refer to the tutorial video for more detailed running instructions: https://youtu.be/R2KRXly2RBo?si=Wd9UUfS0lKd2Ayfy
