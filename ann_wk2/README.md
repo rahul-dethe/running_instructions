@@ -44,7 +44,7 @@ exe.py <your_input_file>                               # To run the application
 
 ### B) 'Non-Interactive Mode'
 Create a file `job.sh`
-This is a SLURM batch script used to submit a job to a computing cluster. It automates the job setup, runs your application, and handles input/output.
+This is a script used to submit a job to a computing cluster. It automates the job setup, runs your application, and handles input/output.
 
 ```bash
 #!/bin/bash
@@ -92,13 +92,13 @@ It is recommended to delete these files to keep the directory clean.
 
 
 > 📌 **Note:** The names of partitions, modules, and other settings may be different on each NSM HPC cluster.  
-> You should manually check your cluster’s documentation to confirm the correct names and update the script accordingly.
+> Please check your cluster’s documentation to confirm the correct names and update the script accordingly.
 
 ---
 
-## Step 3: Execute the SLURM Script
+## Step 3: Execute the Script file
 
-Once your `job.sh` file is ready, you can submit your job to the cluster using the command below:
+Once your `job.sh` file is ready, run the script using the command below:
 
 ```bash
 sbatch job.sh             # Executing the batch script
