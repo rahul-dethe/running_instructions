@@ -35,8 +35,7 @@ After logging into the assigned node, we have to load the Application
 Command 4) module avail | grep -i mscc                 # List all MSCC applications
 Command 5) module load MSCC/ann-ci                     # Load ann-ci
 ```
-![ml av, module load](https://github.com/user-attachments/assets/8277b75e-d65a-4e18-97f0-d6533a712619)
-
+![choose ann-ci](https://github.com/user-attachments/assets/48352aeb-e449-45be-8302-15769c8e0ec9)
 
 Command to run the Application
 ```bash
