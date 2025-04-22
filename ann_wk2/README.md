@@ -8,7 +8,8 @@
 # Command to log in into NSM HPC system via linux or windows OS
 ssh -p 4422 username@hostname
 ```
-![ssh](https://github.com/user-attachments/assets/dcacd85b-b0c5-47fd-ad92-29c103789006)
+![ssh](https://github.com/user-attachments/assets/c98a3e68-f780-4e49-9406-b2bb8bc2181a)
+
 
 - If you do not have access to any NSM HPC system and wish to create an account, please contact [mscc-support@cdac.in](mailto:mscc-support@cdac.in)
 
