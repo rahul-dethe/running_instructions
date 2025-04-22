@@ -3,8 +3,9 @@
 ---
 
 ##  Step 1: Login to the NSM System
-• If have a user account in any of the NSM system, please use your existing credentials to log in.
-• If you do not have access to any NSM system and wish to create an account, please contact **mscc-support@cdac.in**.
+- If you have a user account in any of the NSM systems, please use your existing credentials to log in.  
+- If you do not have access to any NSM system and wish to create an account, please contact [mscc-support@cdac.in](mailto:mscc-support@cdac.in).
+
 
 ## ⚠️ Important Note
 **Do not run MSCC applications on login nodes!**
