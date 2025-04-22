@@ -31,8 +31,13 @@ In this mode, you manually allocate a node and run the application on that node.
 ```bash
 # Command 1: Allocate a node
 salloc -N 1
-Command 2) squeue --me                                  # To see the assigned node name
-Command 3) ssh <node-name>                              # To log in to the assigned node
+
+# Command 2: Check the assigned node
+squeue --me
+
+# Command 3: SSH into the assigned node
+ssh <node-name>
+
 ```
 ![salloc](https://github.com/user-attachments/assets/f2fba0bc-9167-4e27-ba08-ea474a0aa739)
 
