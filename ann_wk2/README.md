@@ -16,7 +16,7 @@ ssh -p 4422 username@hostname
 > ⚠️ **Important:** Do not run any MSCC application on login nodes!
 
 
-##  Step 2: Prepare input and bond Order files.
+##  Step 2: Prepare input and bond Order files
 
 - Download the sample input files (Eg. 10site_pah_S.in & bondOrder-pah10.dat) available in  https://github.com/rahul-dethe/running_instructions/tree/master/ann_wk2/inputs 
 
@@ -26,7 +26,7 @@ OR
 
 
 ##  Step 3: Run the application 
-The application can be run in two modes: **Interactive Mode** and **Non-Interactive Mode**.
+The application can be run in two modes: **Interactive Mode** and **Non-Interactive Mode**
 
 ### A) Interactive Mode
 In this mode, you manually allocate a node and run the application on that node.
@@ -114,7 +114,7 @@ These files are essential for analyzing the system and model performance. In add
 ```
 It is recommended to delete these files to keep the directory clean.
 
-## Output Files
+## Screentshot of output files
 ![output files](https://github.com/user-attachments/assets/17d9ee71-dbcd-4023-b4b9-251bf66585f8)
 
 
