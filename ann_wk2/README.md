@@ -6,11 +6,16 @@
 - If you have a user account, please use your existing credentials to log in.  
 - If you do not have access to any NSM HPC system and wish to create an account, please contact [mscc-support@cdac.in](mailto:mscc-support@cdac.in).
 
-> ⚠️ **Important:** Do **not** run any MSCC application on login nodes.
+> ⚠️ **Important:** Do not run any MSCC application on login nodes!
 
 
-##  Step 2: Prepare your input and bond Order file or download the sample input files available in this Github repository.
-For more details regarding creation of input and bond Order file please refer this repository: https://github.com/dghoshlab/AL-MCCI
+##  Step 2: Prepare input and bond Order files.
+
+- Download the sample input files (10site_pah_S.in & bondOrder-pah10.dat) available in this <Link-to-download-the file> 
+
+OR
+
+- Prepare your input and bond order files by referring to the detailed instructions in the GitHub repository  https://github.com/dghoshlab/AL-MCCI
 
 
 ##  Step 3: Run the application 
