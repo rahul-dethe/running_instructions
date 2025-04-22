@@ -1,10 +1,10 @@
-# Guide to Running ANN-CI on NSM Systems
+# Guide to Run/Execute ANN-CI Software on NSM HPC Systems
 
 ---
 
-##  Step 1: Login to the NSM System
+##  Step 1: Login to the NSM HPC System
 - If you have a user account, please use your existing credentials to log in.  
-- If you do not have access to any NSM system and wish to create an account, please contact [mscc-support@cdac.in](mailto:mscc-support@cdac.in).
+- If you do not have access to any NSM HPC system and wish to create an account, please contact [mscc-support@cdac.in](mailto:mscc-support@cdac.in).
 
 
 ## ⚠️ Important Note: **Do not run any MSCC application on login nodes!**
