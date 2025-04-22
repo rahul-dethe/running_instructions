@@ -17,7 +17,7 @@ For more details regarding creation of input and bond Order file please refer th
 ##  Step 3: Run the application 
 There are two modes in which you can run the application **Interactive Mode** and **Non-Interactive Mode**.
 
-### A) 'Interactive Mode'
+### A) Interactive Mode
 In this process we manually allocate a node and then run the applicaion in that node.
 Execute the commands in the given sequence:
 
@@ -40,7 +40,7 @@ Command to run the Application
 exe.py <your_input_file>                               # To run the application
 ```
 
-### B) 'Non-Interactive Mode'
+### B) Non-Interactive Mode
 Create a file `job.sh`
 This is a script used to submit a job to a computing cluster. It automates the job setup, runs your application, and handles input/output.
 
