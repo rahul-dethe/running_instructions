@@ -99,7 +99,8 @@ sbatch job.sh             # Executing the batch script
 This tells the SLURM scheduler to run your job according to the instructions you mentioned in the script.  
 If everything is set up correctly, SLURM will assign resources and begin processing your job in the background. 
 
-![sbatch with squeue](https://github.com/user-attachments/assets/ca2cb65b-b993-468c-a59f-53084726d9ba)
+![sbatch job sh](https://github.com/user-attachments/assets/6e1a50e3-64d6-4816-b042-fb2a06b195c4)
+
 
 ## Output Files
 ![ann_output](https://github.com/user-attachments/assets/48e011a7-b559-4d27-b7f3-14e33fa28b9a)
