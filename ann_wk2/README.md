@@ -39,6 +39,7 @@ Command to run the Application
 ```bash
 exe.py <your_input_file>                               # To run the application
 ```
+![running the application](https://github.com/user-attachments/assets/9a37669c-4eb3-4067-a080-f1886e5dddac)
 
 ### B) Non-Interactive Mode
 Create a file `job.sh`
