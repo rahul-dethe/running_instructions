@@ -7,7 +7,7 @@
 ```
 Command: ssh -p 4422 username@hostname
 ```
-![ssh](https://github.com/user-attachments/assets/66ce29ba-6fcc-49a5-b903-e7782df46340)
+![ssh](https://github.com/user-attachments/assets/311b14f8-1d95-40ff-85f0-b1c9ed46599f)
 
 - If you do not have access to any NSM HPC system and wish to create an account, please contact [mscc-support@cdac.in](mailto:mscc-support@cdac.in).
 
