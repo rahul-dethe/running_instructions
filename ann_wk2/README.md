@@ -41,6 +41,27 @@ Command to run the Application
 ```bash
 exe.py <your_input_file>                               # To run the application
 ```
+
+### B) 'Non-Interactive Mode'
+Create a file `job.sh`
+This is a SLURM batch script used to submit a job to a computing cluster. It automates the job setup, runs your application, and handles input/output.
+
+```bash
+#!/bin/bash
+#SBATCH --job-name=sys10  # This sets the name of your job
+#SBATCH --nodes=1         # Requesting compute node
+#SBATCH --exclusive       # Reserves the entire node for your job only
+#SBATCH --partition=cpu   # Specifies the partition
+#SBATCH --time=48:00:00   # Sets the maximum time limit
+#SBATCH --output=%j.out   # Output file
+#SBATCH --error=%j.err    # Error file in case of failure
+
+module load MSCC/ann-ci   # Kindly check the module name and replace the command accordingly
+cd $SLURM_SUBMIT_DIR      # Changes to the directory where you submitted the job from
+exe.py <your_input_file>  # Runs your main application
+```
+![sbatch script](https://github.com/user-attachments/assets/541dc399-db92-4def-870e-191de06d6b18)
+
 ## Output Files
 
 A total of 10 output files are generated after successful calculations.
@@ -69,25 +90,6 @@ It is recommended to delete these files to keep the directory clean.
 
 ---
 
-### B) Running an Application in 'Non-Interactive Mode'
-Create a file `job.sh`
-This is a SLURM batch script used to submit a job to a computing cluster. It automates the job setup, runs your application, and handles input/output.
-
-```bash
-#!/bin/bash
-#SBATCH --job-name=sys10  # This sets the name of your job
-#SBATCH --nodes=1         # Requesting compute node
-#SBATCH --exclusive       # Reserves the entire node for your job only
-#SBATCH --partition=cpu   # Specifies the partition
-#SBATCH --time=48:00:00   # Sets the maximum time limit
-#SBATCH --output=%j.out   # Output file
-#SBATCH --error=%j.err    # Error file in case of failure
-
-module load MSCC/ann-ci   # Kindly check the module name and replace the command accordingly
-cd $SLURM_SUBMIT_DIR      # Changes to the directory where you submitted the job from
-exe.py <your_input_file>  # Runs your main application
-```
-![sbatch script](https://github.com/user-attachments/assets/541dc399-db92-4def-870e-191de06d6b18)
 
 > 📌 **Note:** The names of partitions, modules, and other settings may be different on each NSM HPC cluster.  
 > You should manually check your cluster’s documentation to confirm the correct names and update the script accordingly.
