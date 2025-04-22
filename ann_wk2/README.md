@@ -16,7 +16,7 @@ Command: ssh -p 4422 username@hostname
 
 ##  Step 2: Prepare input and bond Order files.
 
-- Download the sample input files (10site_pah_S.in & bondOrder-pah10.dat) available in this <Link-to-download-the file> 
+- Download the sample input files (10site_pah_S.in & bondOrder-pah10.dat) available in this https://github.com/rahul-dethe/running_instructions/tree/master/ann_wk2/inputs 
 
 OR
 
