@@ -61,7 +61,17 @@ exe.py <input_file>            # Runs your main application
 ```
 ![running the application](https://github.com/user-attachments/assets/95bec1f7-429f-4313-8aeb-c29e3ef06428)
 
+## Step 3: Execute the Script file
 
+Once your `job.sh` file is ready, run the script using the command below:
+
+```bash
+sbatch job.sh             # Executing the batch script
+```
+This tells the SLURM scheduler to run your job according to the instructions you mentioned in the script.  
+If everything is set up correctly, SLURM will assign resources and begin processing your job in the background. 
+
+![sbatch job sh](https://github.com/user-attachments/assets/6e1a50e3-64d6-4816-b042-fb2a06b195c4)
 
 ## Output Files
 
@@ -88,19 +98,6 @@ These files are essential for system analysis. In addition, there are four more 
 
 These are scratch files generated during calculations.
 It is recommended to delete these files to keep the directory clean.
-
-## Step 3: Execute the Script file
-
-Once your `job.sh` file is ready, run the script using the command below:
-
-```bash
-sbatch job.sh             # Executing the batch script
-```
-This tells the SLURM scheduler to run your job according to the instructions you mentioned in the script.  
-If everything is set up correctly, SLURM will assign resources and begin processing your job in the background. 
-
-![sbatch job sh](https://github.com/user-attachments/assets/6e1a50e3-64d6-4816-b042-fb2a06b195c4)
-
 
 ## Output Files
 ![output files](https://github.com/user-attachments/assets/17d9ee71-dbcd-4023-b4b9-251bf66585f8)
