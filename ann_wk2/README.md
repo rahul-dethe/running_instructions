@@ -8,7 +8,7 @@
 
 
 ## ⚠️ Important Note
-**Do not run MSCC applications on login nodes!**
+**Do not run any MSCC application on login nodes!**
 ---
 After logging in
 
