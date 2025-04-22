@@ -29,23 +29,26 @@ In this mode, you manually allocate a node and run the application on that node.
 - To allocate and log in to the node, execute the following commands in order:
 
 ```bash
-Command 1) salloc -N 1                                  # To assign a node
+# Command 1: Allocate a node
+salloc -N 1
 Command 2) squeue --me                                  # To see the assigned node name
 Command 3) ssh <node-name>                              # To log in to the assigned node
 ```
 ![salloc](https://github.com/user-attachments/assets/f2fba0bc-9167-4e27-ba08-ea474a0aa739)
 
-- After logging into the node
-  you need to load the ANN-CI application module by using the following commands
+- After logging into the node, you need to load the ANN-CI application module by using the following commands
 ```bash
 Command 4) module avail | grep -i mscc                 # List all MSCC applications
 Command 5) module load MSCC/ann-ci                     # Load ann-ci
 ```
 ![choose ann-ci](https://github.com/user-attachments/assets/baa3c322-20b5-488c-9c68-cfcb178345d2)
 
-Command to run the Application
+Make sure to **choose the correct version of ann-ci** from the available modules, if multiple versions are listed.
+
+- Running the Application
+Once the module is loaded, run the application using the following command:
 ```bash
-exe.py <your_input_file>                               # To run the application
+exe.py <your_input_file>                      # Replace <your_input_file> with the actual file name
 ```
 ![running the application](https://github.com/user-attachments/assets/9a37669c-4eb3-4067-a080-f1886e5dddac)
 
