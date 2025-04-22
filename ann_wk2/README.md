@@ -10,7 +10,6 @@
 ## ⚠️ Important Note
 **Do not run any MSCC application on login nodes!**
 ---
-After logging in
 
 ##  Step 2: Prepare your input and bond Order file or download the sample input files available in this Github repository.
 For more details regarding creation of input and bond Order file please refer this repository: https://github.com/dghoshlab/AL-MCCI
