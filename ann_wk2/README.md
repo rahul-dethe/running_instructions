@@ -5,11 +5,12 @@
 ##  Step 1: Login to the NSM HPC System
 - If you have a user account, please use your existing credentials to log in.
 ```
-Command: ssh -p 4422 username@hostname
+# Command to log in into NSM HPC system via linux or windows OS
+ssh -p 4422 username@hostname
 ```
 ![ssh](https://github.com/user-attachments/assets/12058bbc-be3f-4b95-9577-0112e465eac4)
 
-- If you do not have access to any NSM HPC system and wish to create an account, please contact [mscc-support@cdac.in](mailto:mscc-support@cdac.in).
+- If you do not have access to any NSM HPC system and wish to create an account, please contact [mscc-support@cdac.in](mailto:mscc-support@cdac.in)
 
 > ⚠️ **Important:** Do not run any MSCC application on login nodes!
 
