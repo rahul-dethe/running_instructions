@@ -89,14 +89,6 @@ These files are essential for system analysis. In addition, there are four more 
 These are scratch files generated during calculations.
 It is recommended to delete these files to keep the directory clean.
 
----
-
-
-> 📌 **Note:** The names of partitions, modules, and other settings may be different on each NSM HPC cluster.  
-> Please check your cluster’s documentation to confirm the correct names and update the script accordingly.
-
----
-
 ## Step 3: Execute the Script file
 
 Once your `job.sh` file is ready, run the script using the command below:
@@ -113,7 +105,13 @@ If everything is set up correctly, SLURM will assign resources and begin process
 ![ann_output](https://github.com/user-attachments/assets/48e011a7-b559-4d27-b7f3-14e33fa28b9a)
 
 
+
+---
+Please refer to the tutorial video for more detailed running instructions: https://youtu.be/R2KRXly2RBo?si=Wd9UUfS0lKd2Ayfy
 ---
 
-✅ Following these steps ensures proper execution of ANN-CI on any NSM systems. 🚀
 
+> 📌 **Note:** The names of partitions, modules, and other settings may be different on each NSM HPC cluster.  
+> Please check your cluster’s documentation to confirm the correct names and update the script accordingly.
+
+---
