@@ -7,7 +7,7 @@
 - If you do not have access to any NSM system and wish to create an account, please contact [mscc-support@cdac.in](mailto:mscc-support@cdac.in).
 
 
-## ⚠️ Important Note **Do not run any MSCC application on login nodes!**
+## ⚠️ Important Note: **Do not run any MSCC application on login nodes!**
 ---
 
 ##  Step 2: Prepare your input and bond Order file or download the sample input files available in this Github repository.
