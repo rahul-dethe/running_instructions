@@ -47,17 +47,17 @@ This is a script used to submit a job to a computing cluster. It automates the j
 
 ```bash
 #!/bin/bash
-#SBATCH --job-name=sys10  # This sets the name of your job
-#SBATCH --nodes=1         # Requesting compute node
-#SBATCH --exclusive       # Reserves the entire node for your job only
-#SBATCH --partition=cpu   # Specifies the partition
-#SBATCH --time=48:00:00   # Sets the maximum time limit
-#SBATCH --output=%j.out   # Output file
-#SBATCH --error=%j.err    # Error file in case of failure
+#SBATCH --job-name=sys10       # This sets the name of your job
+#SBATCH --nodes=1              # Requesting compute node
+#SBATCH --partition=standard   # Specifies the partition
+#SBATCH --time=48:00:00        # Sets the maximum time limit
+#SBATCH --output=%j.out        # Output file
+#SBATCH --error=%j.err         # Error file in case of failure
 
-module load MSCC/ann-ci   # Kindly check the module name and replace the command accordingly
-cd $SLURM_SUBMIT_DIR      # Changes to the directory where you submitted the job from
-exe.py <your_input_file>  # Runs your main application
+module load MSCC/ann-ci        # Kindly check the module name and replace the command accordingly
+cd $SLURM_SUBMIT_DIR           # Changes to the directory where you submitted the job from
+exe.py <input_file>            # Runs your main application
+
 ```
 ![sbatch script](https://github.com/user-attachments/assets/541dc399-db92-4def-870e-191de06d6b18)
 
