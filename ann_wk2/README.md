@@ -22,11 +22,11 @@ OR
 
 
 ##  Step 3: Run the application 
-There are two modes in which you can run the application **Interactive Mode** and **Non-Interactive Mode**.
+The application can be run in two modes: **Interactive Mode** and **Non-Interactive Mode**.
 
 ### A) Interactive Mode
-In this process we manually allocate a node and then run the applicaion in that node.
-Execute the commands in the given sequence:
+In this mode, you manually allocate a node and run the application on that node.
+- To allocate and log in to the node, execute the following commands in order:
 
 ```bash
 Command 1) salloc -N 1                                  # To assign a node
@@ -35,7 +35,8 @@ Command 3) ssh <node-name>                              # To log in to the assig
 ```
 ![salloc](https://github.com/user-attachments/assets/f2fba0bc-9167-4e27-ba08-ea474a0aa739)
 
-After logging into the assigned node, we have to load the Application
+- After logging into the node
+  you need to load the ANN-CI application module by using the following commands
 ```bash
 Command 4) module avail | grep -i mscc                 # List all MSCC applications
 Command 5) module load MSCC/ann-ci                     # Load ann-ci
