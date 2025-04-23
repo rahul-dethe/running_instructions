@@ -22,7 +22,7 @@ ssh -p 4422 username@hostname
 
 OR
 
-- Prepare your input and bond order files by referring to the detailed instructions in the GitHub repository  https://github.com/dghoshlab/AL-MCCI
+- Prepare input and bond order files by referring to the detailed instructions in the GitHub repository  https://github.com/dghoshlab/AL-MCCI
 
 
 ##  Step 3: Run the application 
