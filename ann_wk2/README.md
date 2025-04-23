@@ -52,6 +52,9 @@ module avail | grep -i mscc
 
 # Command 5: Load the ANN-CI application
 module load MSCC/ann-ci
+
+# Command 6: Check the loaded modules
+module list
 ```
 ![module list](https://github.com/user-attachments/assets/37181545-902c-46c0-af11-9a6f9078d809)
 
