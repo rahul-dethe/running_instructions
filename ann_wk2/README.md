@@ -53,7 +53,8 @@ module avail | grep -i mscc
 # Command 5: Load the ANN-CI application
 module load MSCC/ann-ci
 ```
-![choose ann-ci](https://github.com/user-attachments/assets/baa3c322-20b5-488c-9c68-cfcb178345d2)
+![module list](https://github.com/user-attachments/assets/37181545-902c-46c0-af11-9a6f9078d809)
+
 
 Make sure to **choose the correct version of ann-ci** from the available modules, if multiple versions are listed.
 
@@ -66,7 +67,7 @@ exe.py <your_input_file>                      # Replace <your_input_file> with t
 
 ### B) Non-Interactive Mode
 You can also run the application using the job submission script.
-- Create a file named job.sh with the following content:
+- Create a file named _job.sh_ with the following content:
 This is a script used to submit a job to a computing cluster. It automates the job setup, runs your application, and handles input/output.
 
 ```bash
@@ -84,7 +85,7 @@ exe.py <input_file>            # Run the ANN-CI application (replace <input_file
 ```
 
 - To run the application, submit the above job submission script using the below command 
-Once your `job.sh` file is ready, run the script using the command below:
+Once your _job.sh_ file is ready, run the script using the command below:
 
 ```bash
 sbatch job.sh             # Submit the batch job
