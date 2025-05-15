@@ -81,7 +81,7 @@ exe.py <your_input_file>                      # Replace <your_input_file> with t
 
 You can also run the application using the job submission script.
 
-- Create a directory and navigate into it (ff already have one, navigate into it)
+- Create a directory and navigate into it (if already have one, navigate into it)
   
 - Create a file _job.sh_ with the following content:
 This is a script used to submit a job to a computing cluster. It automates the job setup, runs your application, and handles input/output.
