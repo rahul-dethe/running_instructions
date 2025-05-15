@@ -78,8 +78,12 @@ exe.py <your_input_file>                      # Replace <your_input_file> with t
 ![running the application](https://github.com/user-attachments/assets/9a37669c-4eb3-4067-a080-f1886e5dddac)
 
 ### B) Non-Interactive Mode
+
 You can also run the application using the job submission script.
-- Create a file named _job.sh_ with the following content:
+
+- Create a directory and navigate into it (If already have one, navigate into it)
+  
+- Create a file _job.sh_ with the following content:
 This is a script used to submit a job to a computing cluster. It automates the job setup, runs your application, and handles input/output.
 
 ```bash
