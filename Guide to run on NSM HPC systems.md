@@ -27,11 +27,11 @@ mkdir annci_test001
 cd annci_test001
 ```
 
-- Download the sample input files available in https://github.com/rahul-dethe/running_instructions/tree/master/ann_wk2/inputs
+- Download the sample input files available in [Sample input files](https://github.com/rahul-dethe/running_instructions/tree/master/ann_wk2/inputs)
 
 OR
 
-- Prepare input and bond order files by referring to the detailed instructions in the GitHub repository  https://github.com/dghoshlab/AL-MCCI
+- Prepare input and bond order files by referring to the detailed instructions in the GitHub repository  [AL-MCCI](https://github.com/dghoshlab/AL-MCCI)
 
 
 ##  Step 3: Run the application 
