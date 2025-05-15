@@ -15,10 +15,20 @@ ssh -p 4422 username@hostname
 
 > ⚠️ **Important:** Do not run any MSCC application on login nodes!
 
+## Step 2: Create a working directory and prepare input files
 
-##  Step 2: Prepare input and bond Order files
+Create a working directory and navigate into it, this directory will contain the input files.
 
-- Download the sample input files (Eg. 10site_pah_S.in & bondOrder-pah10.dat) available in https://github.com/rahul-dethe/running_instructions/tree/master/ann_wk2/inputs
+```bash
+# Command 1: Create a directory
+mkdir annci_test001
+
+# Command 2: Navigate into the directory
+cd annci_test001
+
+- Download the input files
+
+- Download the sample input files available in https://github.com/rahul-dethe/running_instructions/tree/master/ann_wk2/inputs
 
 OR
 
@@ -119,6 +129,6 @@ It is recommended to delete these files to keep the directory clean.
 ## Screentshot of the output files
 ![output files](https://github.com/user-attachments/assets/17d9ee71-dbcd-4023-b4b9-251bf66585f8)
 
-## Video Tutotial
+## Video Tutorial
 - Please refer to the tutorial video for more detailed running instructions: https://youtu.be/R2KRXly2RBo?si=Wd9UUfS0lKd2Ayfy
 ---
