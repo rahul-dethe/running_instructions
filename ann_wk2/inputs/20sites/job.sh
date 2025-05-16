@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=sites16
+#SBATCH --job-name=sites20
 #SBATCH --nodes=1
 #SBATCH --partition=cpu
 #SBATCH --time=48:00:00
