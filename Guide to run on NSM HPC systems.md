@@ -54,7 +54,7 @@ ssh <node-name>
 ```
 ![salloc](https://github.com/user-attachments/assets/c4982c71-6ed3-4f35-b2d5-37e8aa325cb7)
 
-- After logging into the node, you need to load the ANN-CI application module by using the following commands
+- After logging into the node, navigate to the directory that contains the input and bond order files and load the ANN-CI application module using the following commands
 ```bash
 # Command 4: List all MSCC applications
 module avail | grep -i mscc
