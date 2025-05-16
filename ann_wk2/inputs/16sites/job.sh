@@ -8,4 +8,4 @@
 
 module load MSCC/ann-ci
 cd $SLURM_SUBMIT_DIR
-exe.py 14site_pah_S.in
+exe.py 16site_lc_S.in
