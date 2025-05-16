@@ -73,7 +73,7 @@ Make sure to **choose the correct version of ann-ci** from the available modules
 - Running the Application
 Once the module is loaded, run the application using the following command:
 ```bash
-exe.py <your_input_file>                      # Replace <your_input_file> with the actual file name
+exe.py **<your_input_file>**                      # Replace <your_input_file> with the actual file name
 ```
 ![running the application](https://github.com/user-attachments/assets/9a37669c-4eb3-4067-a080-f1886e5dddac)
 
@@ -81,7 +81,7 @@ exe.py <your_input_file>                      # Replace <your_input_file> with t
 
 You can also run the application using the job submission script.
 
-- Create a directory and navigate into it (if already have one, navigate into it)
+- Create a directory and create the input and bond Order files and navigate into it (if already have, navigate into it)
   
 - Create a file _job.sh_ with the following content:
 This is a script used to submit a job to a computing cluster. It automates the job setup, runs your application, and handles input/output.
