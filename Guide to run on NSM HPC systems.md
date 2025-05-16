@@ -8,14 +8,14 @@
 
 
 ```
-#Command to log in into NSM HPC system via linux or windows OS
+# Command to log in into NSM HPC system via linux or windows OS
 ssh -p 4422 username@hostname
 ```
 ![ssh](https://github.com/user-attachments/assets/fadebec6-8d52-4a81-b03e-a40bfaa96378)
 
 > ⚠️ **Important:** Do not run any MSCC application on login nodes!
 
-## Step 2: Create a working directory and prepare input files
+## Step 2: Create a directory and prepare input files
 
 Create a working directory and navigate into it, this directory will contain the input files.
 
