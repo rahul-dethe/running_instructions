@@ -128,7 +128,6 @@ These files are essential for analyzing the system and model performance. In add
 10) input_file.in.out.enrich.csv
 ```
 It is recommended to delete these files to keep the directory clean.
-
 ## Screentshot of the output files
 ![output files](https://github.com/user-attachments/assets/17d9ee71-dbcd-4023-b4b9-251bf66585f8)
 
